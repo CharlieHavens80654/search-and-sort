@@ -18,11 +18,9 @@ public class Insertion
     int i =1;
     while(i<arr.length){
         int j = i-1;
-        while(j>=0){
-            while(arr[i]<arr[j]){
-                j--;
-            }
-        }
+        while(j>=0 && arr[i] <arr[j]){
+            j--;
+        }   
         int temp = arr[i];
         int k = i;
         while(k>j+1){

@@ -15,8 +15,27 @@ public class Merge
    * Returns the sorted array
    */
   public static int[] sort(int[] arr) {
-    // Your algorithm goes here!
-
+    int N = arr.length;
+    int [] left = {};
+    int [] right = {};
+    if (N>1){
+        int middle = N/2;
+        int leftLength = middle;
+        int rightLength = N-leftLength;
+        int index = 0;
+        while(index<middle){
+            left[index] = arr[index];
+        }
+        int rightIndex =0;
+        index = middle;
+        while (index >= N){
+            right[rightIndex] = arr[index];
+            rightIndex++;
+            index++;
+        }
+        
+    }
+    return arr;
   }
   
   public static void main(String[] args) {
